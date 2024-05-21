@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompetenceView" customModule="POCCV" customModuleProvider="target">
+            <connections>
+                <outlet property="competenceLbl" destination="CEq-mj-3nX" id="DUm-wA-9B4"/>
+                <outlet property="progressview" destination="Xws-av-cY2" id="mUt-9J-OEq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ucp-ul-sfQ">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="35"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEq-mj-3nX">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="9eX-MO-M7d"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="custom" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xws-av-cY2">
+                            <rect key="frame" x="0.0" y="24" width="393" height="11"/>
+                        </progressView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ucp-ul-sfQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5VW-5Z-OVG"/>
+                <constraint firstAttribute="bottom" secondItem="Ucp-ul-sfQ" secondAttribute="bottom" id="E7F-mP-oOA"/>
+                <constraint firstAttribute="trailing" secondItem="Ucp-ul-sfQ" secondAttribute="trailing" id="ZJ2-Uo-S5j"/>
+                <constraint firstItem="Ucp-ul-sfQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="a6U-jW-6g0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-2.2900763358778624" y="274.29577464788736"/>
+        </view>
+    </objects>
+</document>

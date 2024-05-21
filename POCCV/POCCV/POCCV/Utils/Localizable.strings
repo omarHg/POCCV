@@ -1,0 +1,71 @@
+/* 
+  Localizable.strings
+  POCCV
+
+  Created by Omar Hernandez Gonzalez on 09/02/24.
+  
+*/
+"cvProfessional" = "Crear CV Profesional";
+"hts" = "Cómo empezar a invertir";
+
+"start" = "Comenzar";
+"next" = "Siguiente";
+"anotherTime" = "En otro momento";
+"close" = "Cerrar";
+"finalize" = "Finalizar";
+"export" = "Exportar";
+"save" = "Guardar";
+"delete" = "Eliminar";
+"deleteDesc" = "Se eliminará el registro";
+"accept" = "Aceptar";
+"cancel" = "Cancelar";
+"downloadApp" = "Descargar app";
+"uploadPhoto" = "Subir foto";
+"emptyField" = "Campo vacio";
+"isRequired" = "Los campos marcados con un * son obligatorios";
+
+"personalTitle" = "Personal";
+"name" = "* Nombre";
+"lastname" = "* Apellido";
+"birthDate" = "* Fecha de nacimiento";
+"profile" = "Algo de ti";
+
+"contactTitle" = "Detalles de contacto";
+"email" = "* Correo electronico";
+"phone" = "Telefono";
+"cellphone" = "* Celular";
+"address" = "* Dirección";
+
+"acedemicTitle" = "Información academica";
+"schoolName" = "* Nombre de la instituión";
+"schoolStart" = "* Fecha de inicio";
+"schoolFinish" = "* Fecha de finalización";
+"schoolCity" = "* Direccion de la institución";
+"schoolDegree" = "* Grado";
+"schoolDescription" = "Descripción";
+
+"workTitle" = "Experiencia laboral";
+"workPosition" = "*Puesto";
+"workName" = "* Nombre de la instituión";
+"workStart" = "* Fecha de inicio";
+"workFinish" = "* Fecha de finalización";
+"workAddress" = "* Direccion de la institución";
+"workDescription" = "* Descripción (Opcional)";
+
+"competence" = "* Competencias";
+
+"acedemicTitleSection" = "Formacion";
+"employementTitleSection" = "Experiencia Laboral";
+"detailsTitleSection" = "Detalles";
+"competencesTitle" = "Competencias";
+
+"competencesSection" = "Competencias";
+
+"profileTitleSection" = "Perfil";
+
+"presentation" = "Elige una opción";
+"inviteDesc" = "Descaga la app y podras\n\n";
+"inviteDesc1" = "Agregar tu foto\nEditar tus datos\nAgregar competencias ";
+
+"htsStartTitle" = "Comienza a invertir";
+"htsStartDec" = "Te acompañamos en los primeros pasos para adentrarte al mundo de las inversiones.";
