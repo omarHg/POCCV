@@ -60,8 +60,16 @@ final class MainViewController: BaseController {
     }
     
     @IBAction func tapStartHTS(_ sender: UIButton) {
-        let controller = StartHTSViewController()
-        navigationController?.pushViewController(controller, animated: true)
+        guard let answers: [ChoiceAnswer] = try? UserDefaults.standard.get() else {
+            let controller = StartHTSViewController()
+            navigationController?.pushViewController(controller, animated: true)
+            return
+        }
+        
+        let view = FirstStepsViewController()
+        UserDefaults.standard.save(entity: answers)
+        view.firstStepViewModel = FirstStepViewModel(answers: answers)
+        navigationController?.pushViewController(view, animated: true)
     }
 }
 

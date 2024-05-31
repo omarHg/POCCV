@@ -30,10 +30,17 @@ class BaseController: UIViewController {
     @objc func doneSelector() {
         view.endEditing(true)
     }
+    
+    func displayOverlay() {
+    }
+    
+    func removeBack() {
+        navigationItem.setHidesBackButton(true, animated: true)
+    }
 }
 
 final class MainViewController: BaseController {
-    @IBOutlet weak private var presentationLbl: UITextField!
+    @IBOutlet weak private var presentationLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +51,17 @@ final class MainViewController: BaseController {
     @IBAction func tapStart(_ sender: UIButton) {
         let controller = UploadPhotoViewController()
         navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    @IBAction func tapStartHTS(_ sender: UIButton) {
+        guard let answers: [ChoiceAnswer] = try? UserDefaults.standard.get() else {
+            return
+        }
+        
+        let view = FirstStepsViewController()
+        UserDefaults.standard.save(entity: answers)
+        view.firstStepViewModel = FirstStepViewModel(answers: answers)
+        navigationController?.pushViewController(view, animated: true)
     }
 }
 

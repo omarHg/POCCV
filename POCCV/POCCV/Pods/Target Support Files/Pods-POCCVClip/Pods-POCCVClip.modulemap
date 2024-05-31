@@ -1,0 +1,6 @@
+framework module Pods_POCCVClip {
+  umbrella header "Pods-POCCVClip-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment version="5648" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,41 +19,60 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pT9-yh-7F4">
-                    <rect key="frame" x="60" y="438" width="294" height="20.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="presentation"/>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="custom" value="YES"/>
-                    </userDefinedRuntimeAttributes>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wF6-6S-CeU">
-                    <rect key="frame" x="16" y="790" width="382" height="56"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="56" id="NrJ-gV-X8l"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Start"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="custom" value="YES"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="start"/>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="tapStart:" destination="-1" eventType="touchUpInside" id="TjF-J1-Xd4"/>
-                    </connections>
-                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ag9-3N-zsP">
+                    <rect key="frame" x="16" y="48" width="382" height="814"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pT9-yh-7F4">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="686"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="presentation"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="custom" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wF6-6S-CeU">
+                            <rect key="frame" x="0.0" y="694" width="382" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="NrJ-gV-X8l"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Start"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="custom" value="YES"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="start"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="tapStart:" destination="-1" eventType="touchUpInside" id="TjF-J1-Xd4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7KH-jK-Ymh">
+                            <rect key="frame" x="0.0" y="758" width="382" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="zIz-ro-PN6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="HTS"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="custom" value="YES"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="hts"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="tapStartHTS:" destination="-1" eventType="touchUpInside" id="GE1-bA-Ufu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <constraints>
-                <constraint firstItem="wF6-6S-CeU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="4MX-7g-GbY"/>
-                <constraint firstItem="pT9-yh-7F4" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="FLa-ob-FdW"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wF6-6S-CeU" secondAttribute="bottom" constant="16" id="OIm-DU-0pU"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wF6-6S-CeU" secondAttribute="trailing" constant="16" id="PLl-MM-Elt"/>
-                <constraint firstItem="pT9-yh-7F4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="gOM-0P-T4x"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pT9-yh-7F4" secondAttribute="trailing" constant="60" id="x63-Ud-XdD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ag9-3N-zsP" secondAttribute="trailing" constant="16" id="0GD-0G-mfQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ag9-3N-zsP" secondAttribute="bottom" id="0ML-He-3Jp"/>
+                <constraint firstItem="ag9-3N-zsP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="I4V-2U-Fa7"/>
+                <constraint firstItem="ag9-3N-zsP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zbM-Lw-oKf"/>
             </constraints>
             <point key="canvasLocation" x="133" y="83"/>
         </view>

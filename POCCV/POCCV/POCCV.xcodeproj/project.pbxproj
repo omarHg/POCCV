@@ -119,6 +119,15 @@
 		07FD0EE42B770E9A00BCC87B /* AcademicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FD0EE22B770E9A00BCC87B /* AcademicViewController.xib */; };
 		5885CEF1F1AFC0FD9D63591D /* Pods_POCCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDDCD1E5D0503511796DCD /* Pods_POCCV.framework */; };
 		92943D976503C1505D1A1DC3 /* Pods_POCCVClip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F621F6A352DD64645B1CD529 /* Pods_POCCVClip.framework */; };
+		C2666CF92BFD379B00DA5FF3 /* FirstStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2666CF82BFD379B00DA5FF3 /* FirstStepViewModel.swift */; };
+		C2666CFA2BFD413900DA5FF3 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785AAF42BEEC57200ACD8D6 /* CheckView.swift */; };
+		C2666CFB2BFD413D00DA5FF3 /* CheckView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0785AAF62BEEC57C00ACD8D6 /* CheckView.xib */; };
+		C2666CFC2BFD413F00DA5FF3 /* FirstStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785AAEF2BEEC17900ACD8D6 /* FirstStepsViewController.swift */; };
+		C2666CFD2BFD414200DA5FF3 /* FirstStepsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0785AAF02BEEC17900ACD8D6 /* FirstStepsViewController.xib */; };
+		C2666CFE2BFD414500DA5FF3 /* FirstStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2666CF82BFD379B00DA5FF3 /* FirstStepViewModel.swift */; };
+		C2666D012BFD428500DA5FF3 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2666D002BFD428500DA5FF3 /* BaseController.swift */; };
+		C2666D022BFD433B00DA5FF3 /* Questionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785AAD22BE9A01F00ACD8D6 /* Questionary.swift */; };
+		C2666D032BFD44D400DA5FF3 /* HTSJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785AAD02BE99B1C00ACD8D6 /* HTSJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -249,6 +258,8 @@
 		7212B840A9F6BDCC810910F7 /* Pods-POCCV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POCCV.debug.xcconfig"; path = "Target Support Files/Pods-POCCV/Pods-POCCV.debug.xcconfig"; sourceTree = "<group>"; };
 		733418D5F154DC0D42D74475 /* Pods-POCCV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POCCV.release.xcconfig"; path = "Target Support Files/Pods-POCCV/Pods-POCCV.release.xcconfig"; sourceTree = "<group>"; };
 		865526F744C9FDC7F6587673 /* Pods-POCCVClip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POCCVClip.release.xcconfig"; path = "Target Support Files/Pods-POCCVClip/Pods-POCCVClip.release.xcconfig"; sourceTree = "<group>"; };
+		C2666CF82BFD379B00DA5FF3 /* FirstStepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepViewModel.swift; sourceTree = "<group>"; };
+		C2666D002BFD428500DA5FF3 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		F621F6A352DD64645B1CD529 /* Pods_POCCVClip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POCCVClip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFDDCD1E5D0503511796DCD /* Pods_POCCV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POCCV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -350,6 +361,7 @@
 				0785AAF32BEEC55200ACD8D6 /* CheckView */,
 				0785AAEF2BEEC17900ACD8D6 /* FirstStepsViewController.swift */,
 				0785AAF02BEEC17900ACD8D6 /* FirstStepsViewController.xib */,
+				C2666CF82BFD379B00DA5FF3 /* FirstStepViewModel.swift */,
 			);
 			path = FisrtSteps;
 			sourceTree = "<group>";
@@ -463,6 +475,7 @@
 				077D343A2B926CA90070EA6B /* UserDefaultManager.swift */,
 				077D343D2B92968F0070EA6B /* Extension+Date.swift */,
 				077D34362B925B220070EA6B /* Extension+UITextView.swift */,
+				C2666D002BFD428500DA5FF3 /* BaseController.swift */,
 				07A8122A2B76FCB7005B3503 /* Extension+UIColor.swift */,
 				07E3BCB32BAFEAFF00463350 /* Extension+UIViewController.swift */,
 				07A812242B76F89B005B3503 /* StringLocalized.swift */,
@@ -728,6 +741,7 @@
 				07D1AD012BA670FE00882A47 /* CVPersonalNameView.xib in Resources */,
 				07D1AD072BA670FE00882A47 /* PersonalViewController.xib in Resources */,
 				07D1ACFD2BA670FE00882A47 /* ContactViewController.xib in Resources */,
+				C2666CFB2BFD413D00DA5FF3 /* CheckView.xib in Resources */,
 				07D1AD0D2BA6714000882A47 /* AcademicView.xib in Resources */,
 				07D1AD0E2BA6714000882A47 /* AcademicViewController.xib in Resources */,
 				07A811CC2B76D138005B3503 /* LaunchScreen.storyboard in Resources */,
@@ -739,6 +753,7 @@
 				07D1AD092BA670FE00882A47 /* WorkView.xib in Resources */,
 				07D1AD1B2BA680A100882A47 /* CompetenciesCell.xib in Resources */,
 				07D1ACFF2BA670FE00882A47 /* CVFinalViewController.xib in Resources */,
+				C2666CFD2BFD414200DA5FF3 /* FirstStepsViewController.xib in Resources */,
 				07D1AD152BA672C700882A47 /* CompetenciesViewController.xib in Resources */,
 				07D1AD202BA6B19100882A47 /* CompetenceView.xib in Resources */,
 				07D1AD0B2BA670FE00882A47 /* WorkViewController.xib in Resources */,
@@ -864,6 +879,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E3BCB42BAFEAFF00463350 /* Extension+UIViewController.swift in Sources */,
+				C2666CFC2BFD413F00DA5FF3 /* FirstStepsViewController.swift in Sources */,
 				07A812282B76FA02005B3503 /* Extension+UIButton.swift in Sources */,
 				07A811C42B76D135005B3503 /* ViewController.swift in Sources */,
 				07A812002B76EBC7005B3503 /* EmploymentHistoryEntity.swift in Sources */,
@@ -875,8 +891,11 @@
 				07D1AD1C2BA680A100882A47 /* CompetenciesCell.swift in Sources */,
 				077D34412B929C510070EA6B /* AcademicInformationEntity.swift in Sources */,
 				07D1AD0F2BA6714000882A47 /* AcademicViewController.swift in Sources */,
+				C2666D022BFD433B00DA5FF3 /* Questionary.swift in Sources */,
+				C2666D012BFD428500DA5FF3 /* BaseController.swift in Sources */,
 				07D1AD102BA6714000882A47 /* AcademicView.swift in Sources */,
 				07D1AD022BA670FE00882A47 /* CVSectionView.swift in Sources */,
+				C2666CFA2BFD413900DA5FF3 /* CheckView.swift in Sources */,
 				07D1AD082BA670FE00882A47 /* WorkView.swift in Sources */,
 				07A812042B76EBE4005B3503 /* ContactInformationEntity.swift in Sources */,
 				07A812252B76F89B005B3503 /* StringLocalized.swift in Sources */,
@@ -892,8 +911,10 @@
 				07A811C22B76D135005B3503 /* SceneDelegate.swift in Sources */,
 				07A812222B76F864005B3503 /* Extension+UILabel.swift in Sources */,
 				07A8122B2B76FCB7005B3503 /* Extension+UIColor.swift in Sources */,
+				C2666D032BFD44D400DA5FF3 /* HTSJSON.swift in Sources */,
 				077D34392B925FCA0070EA6B /* Extension+UIView.swift in Sources */,
 				07D1AD162BA672C700882A47 /* CompetenciesViewController.swift in Sources */,
+				C2666CFE2BFD414500DA5FF3 /* FirstStepViewModel.swift in Sources */,
 				07D1ACFC2BA670FE00882A47 /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -927,6 +948,7 @@
 				074F78452B9BA49A00326236 /* WorkView.swift in Sources */,
 				077D34482B929F330070EA6B /* AcademicView.swift in Sources */,
 				07D1AD242BA6B70C00882A47 /* InviteView.swift in Sources */,
+				C2666CF92BFD379B00DA5FF3 /* FirstStepViewModel.swift in Sources */,
 				07A812112B76EFF5005B3503 /* PersonalViewController.swift in Sources */,
 				07A8121A2B76F709005B3503 /* ContactViewController.swift in Sources */,
 				077D344C2B92A03D0070EA6B /* Extension+UIView.swift in Sources */,

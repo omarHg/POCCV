@@ -68,6 +68,7 @@ final class QuestionViewControllerViewController: BaseController {
     
     func showFinish() {
         let view = FirstStepsViewController()
+        UserDefaults.standard.save(entity: answers)
         view.firstStepViewModel = FirstStepViewModel(answers: answers)
         navigationController?.pushViewController(view, animated: true)
     }

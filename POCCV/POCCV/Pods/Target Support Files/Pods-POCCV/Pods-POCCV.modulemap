@@ -1,0 +1,6 @@
+framework module Pods_POCCV {
+  umbrella header "Pods-POCCV-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -10,6 +10,7 @@ import UIKit
 
 extension UserDefaults {
     static let suiteName: String = "group.ohg.poccv.defaults"
+    
     func save(entity: Encodable) {
         guard let sharedUserDefaults = UserDefaults(suiteName: UserDefaults.suiteName) else {
             // Error handling
